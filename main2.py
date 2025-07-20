@@ -18,9 +18,15 @@ def send_summary(user_id: int):
         return
     text = "📋 Ваша заявка:\n"
     for key, value in data.items():
-        text += f"• {key}: {value}\n"
+        text += f"•  {value}\n"
     bot.send_message(user_id, text)
     session.reset()
+
+    '''
+TO_CHAT_ID = ...          # нужный id!
+
+    bot.forward_message(TO_CHAT_ID, message.chat.id, message.message_id)
+'''
 
 
 class State(TypedDict):
