@@ -167,7 +167,7 @@ fsm: Dict[str, State] = {
         ),
     },
     "portfolio": {
-        "text": "🖼 Портфолио: [пример](https://ru.stackoverflow.com/users/562052/amgarak)",
+        "text": "🖼 Портфолио: [пример](https://github.com/Alexfox36/telegramm_okna.git)",
     },
     "adress": {
         "text": "Укажите ваш город/район:",
