@@ -166,3 +166,5 @@ pyTelegramBotAPI==4.27.0
 requests==2.32.4
 telebot==0.0.5
 urllib3==2.5.0
+
+python-dotenv~=1.1.1

@@ -1,10 +1,15 @@
+import os
 from typing import TypedDict, NotRequired, Callable, Dict
 import telebot
 from telebot import types
-from config import TELEGRAM_BOT_TOKEN
+
+from dotenv import load_dotenv
 # from oauth2client.service_account import ServiceAccountCredentials
 
-bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
+load_dotenv()
+
+api_key = os.getenv("TELEGRAM_BOT_TOKEN")
+bot = telebot.TeleBot(api_key)
 
 BACK = "🔙 Назад"
 MAIN_MENU = "main_menu"
